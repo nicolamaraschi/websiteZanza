@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Typography, Grid, Button } from '@mui/material';
+import { Box, Container, Typography, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
 
 const About = () => {
@@ -92,8 +92,8 @@ const About = () => {
                                 fontSize: { xs: '2rem', md: '3rem' },
                                 color: '#000'
                             }}>
-                                The Art of <br />
-                                Digital Vibe
+                                The Soul of <br />
+                                Venice in Milan
                             </Typography>
 
                             <Typography variant="body1" sx={{
@@ -103,32 +103,12 @@ const About = () => {
                                 mb: 6,
                                 fontWeight: 400
                             }}>
-                                Stompino isn't just an agency; it's a movement. We blend cutting-edge technology with an unmistakable aesthetic to create digital experiences that don't just function—they resonate.
+                                Xe Bon is not just a bar; it's a destination. We bring the authentic Venetian "ombre" culture to Milan, blending tradition with a modern, welcoming atmosphere where every glass tells a story.
                                 <br /><br />
-                                Born from a passion for perfection, we are the architects of the new web, crafting solutions that are visibly superior and technically flawless.
+                                Born from a passion for quality and conviviality, we are the ambassadors of good taste, crafting aperitivos that are visibly superior and tastefully flawless.
                             </Typography>
 
-                            <Button
-                                variant="contained"
-                                size="large"
-                                sx={{
-                                    bgcolor: '#cca43b', // Gold color
-                                    color: 'white',
-                                    borderRadius: 0,
-                                    py: 2,
-                                    px: 5,
-                                    fontSize: '0.9rem',
-                                    fontWeight: 700,
-                                    letterSpacing: '0.1em',
-                                    boxShadow: 'none',
-                                    '&:hover': {
-                                        bgcolor: '#b08d33',
-                                        boxShadow: 'none'
-                                    }
-                                }}
-                            >
-                                Join The Team
-                            </Button>
+
                         </motion.div>
                     </Box>
                 </Grid>
