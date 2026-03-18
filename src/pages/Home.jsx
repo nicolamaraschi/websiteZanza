@@ -112,7 +112,7 @@ const Home = () => {
                             src="/images/logo.png"
                             alt="Xe Bon"
                             sx={{
-                                width: { xs: '80%', md: '50%' },
+                                width: { xs: '80%', sm: '60%', md: '50%' },
                                 height: 'auto',
                                 mb: 2,
                                 display: 'block'
@@ -174,9 +174,9 @@ const Home = () => {
 
                 <Container maxWidth="lg">
                     {/* Carousel Section */}
-                    <div style={{ position: 'relative', height: '600px', overflow: 'hidden', borderRadius: '16px', background: '#000' }}>
+                    <Box sx={{ position: 'relative', height: { xs: '400px', md: '600px' }, overflow: 'hidden', borderRadius: '16px', background: '#000' }}>
                         <HeroCarousel />
-                    </div>
+                    </Box>
                 </Container>
             </Box >
         </Box >

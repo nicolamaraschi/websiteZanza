@@ -70,7 +70,7 @@ const Services = () => {
                         <Typography variant="h1" sx={{
                             fontFamily: '"Outfit", sans-serif',
                             fontWeight: 900,
-                            fontSize: { xs: '3rem', md: '7rem' },
+                            fontSize: { xs: '2.5rem', sm: '3.5rem', md: '7rem' },
                             letterSpacing: '0.05em',
                             textTransform: 'uppercase',
                             color: 'white',
@@ -96,7 +96,7 @@ const Services = () => {
                         <motion.div
                             initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                             whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true, margin: "-100px" }}
+                            viewport={{ once: true, margin: "-20px" }}
                             transition={{ duration: 0.8 }}
                         >
                             <Typography variant="overline" sx={{ color: '#ffb300', letterSpacing: '0.2em', fontSize: '0.9rem', display: 'block', mb: 2 }}>

@@ -88,7 +88,7 @@ const Menu = () => {
                         ))}
                     </Tabs>
 
-                    <Box sx={{ p: { xs: 2, md: 6 }, bgcolor: '#fff' }}>
+                    <Box sx={{ p: { xs: 3, md: 8 }, bgcolor: '#fff', mt: 2 }}>
                         {activeTab === 0 && <WineSection />}
                         {activeTab === 1 && <BeerSpritzSection />}
                         {activeTab === 2 && <CocktailSoftSection />}
@@ -100,7 +100,7 @@ const Menu = () => {
 };
 
 const MenuItem = ({ name, priceGlass, priceBottle, description, highlight }) => (
-    <Box sx={{ mb: 3, display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', borderBottom: '1px dashed #eee', pb: 2 }}>
+    <Box sx={{ mb: 4, display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', borderBottom: '1px dashed #eee', pb: 2 }}>
         <Box>
             <Typography variant="h6" sx={{ fontWeight: 700, color: '#333' }}>
                 {name} {highlight && <Chip label={highlight} size="small" color="primary" sx={{ ml: 1, height: 20, fontSize: '0.6rem' }} />}
@@ -127,13 +127,13 @@ const MenuItem = ({ name, priceGlass, priceBottle, description, highlight }) => 
 );
 
 const SectionTitle = ({ title }) => (
-    <Typography variant="h4" sx={{ fontFamily: '"Outfit", sans-serif', fontWeight: 800, mb: 4, mt: 2, color: '#1a1a1a', borderLeft: '5px solid #000', pl: 2 }}>
+    <Typography variant="h4" sx={{ fontFamily: '"Outfit", sans-serif', fontWeight: 800, mb: 4, mt: 4, color: '#1a1a1a', borderLeft: '5px solid #000', pl: 2 }}>
         {title}
     </Typography>
 );
 
 const WineSection = () => (
-    <Grid container spacing={4}>
+    <Grid container spacing={6}>
         {/* Column 1: Bollicine & Vino Casa */}
         <Grid item xs={12} md={4}>
             <SectionTitle title="Bollicine" />

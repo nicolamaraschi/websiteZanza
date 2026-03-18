@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 const Contact = () => {
     return (
-        <Box sx={{ width: '100vw', overflowX: 'hidden' }}>
+        <Box sx={{ width: '100%', overflowX: 'hidden' }}>
             {/* Hero Section */}
             <Box sx={{
                 position: 'relative',
@@ -55,7 +55,7 @@ const Contact = () => {
                                 color: 'white',
                                 fontFamily: '"Outfit", sans-serif',
                                 fontWeight: 900,
-                                fontSize: { xs: '3.5rem', md: '7rem' },
+                                fontSize: { xs: '2.5rem', sm: '3.5rem', md: '7rem' },
                                 letterSpacing: '0.05em',
                                 textTransform: 'uppercase',
                                 lineHeight: 0.9,

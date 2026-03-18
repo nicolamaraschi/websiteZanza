@@ -20,7 +20,7 @@ const Navbar = () => {
     // Check for scroll to add background if needed (optional feature for usability)
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 50;
+            const isScrolled = window.scrollY > 20; // Reduced threshold for mobile snappiness
             if (isScrolled !== scrolled) {
                 setScrolled(isScrolled);
             }
@@ -148,7 +148,7 @@ const Navbar = () => {
                 ModalProps={{ keepMounted: true }}
                 sx={{
                     display: { xs: 'block', md: 'none' },
-                    '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 280, bgcolor: '#1a1a1a' },
+                    '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 280, bgcolor: '#1a1a1a', overflowY: 'auto' },
                 }}
             >
                 {drawer}
